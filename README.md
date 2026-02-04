@@ -1,3 +1,1 @@
-<p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400">
-</p>
+<img width="1280" height="768" alt="image" src="https://github.com/user-attachments/assets/158f4659-b5a8-4a23-b39a-e86df53fc99c" />
