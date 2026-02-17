@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #28c16f;
+    overflow: hidden;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 40px 60px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.187) ;
+    text-shadow: 0 0 3px black;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.5s;
+}
+
+nav ul li a:hover{
+    border-bottom: 3px solid white;
+}
+
+.main{
+    overflow: hidden;
+}
+
+.section{
+    height: 100vh;
+    padding: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.left p{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    text-indent: 75px;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+}
+
+.left h4{
+    font-size: 27px;
+    color: #1c683f;
+    margin-bottom: 48px;
+}
+
+.left .botao{
+    background-color: #1c683f;
+    padding: 24px 90px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: all 0.3s;
+}
+
+.left .botao:hover{
+    box-shadow: 0 3px 7px #1c683f;
+}
+
+.right img{
+    height: 500px;
+    width: 500px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    animation: float 1.8s infinite alternate;
+    padding-top: 30px;
+
+}
+
+.right .shadow{
+    width: 450px;
+    height: 45px;
+    background: hsla(38, 21%, 19%, .16);
+    border-radius: 50%;
+    margin: auto;
+    filter: blur(5px);
+    animation: shadow 1.8s infinite alternate;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+
+@keyframes shadow{
+    0%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(.85);
+    }
+}
+
+
+
+
+
+
+.left a img{
+    display: none;
+}
+
+.left a:hover img{
+    display: block;
+    max-width: 150px;
+    max-height: 150px;
+    
+}
+
+
+
