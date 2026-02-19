@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!--table tr td
+    
+    tabelas grandes:
+    CAPTION: LEGENDA
+    THEAD: tr td th
+    TBODY: tr td th
+    TFOOT: tr td th
+    
+    scoupe de th: row, columns
+    -->
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELA</title>
+    <style>
+
+        h1{
+            text-align: center;
+            text-decoration: overline;
+            
+        }
+
+        body{
+            height: 150vh;
+            width: 90vw;
+        }
+
+        caption{
+            background-color: rgba(0, 0, 255, 0.783);
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            padding: 5px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+
+        }
+
+        table{
+            border: 1px solid black;
+            border-collapse: separate;
+            width: 90vw;
+            height: 30vh;
+            position: relative;
+            margin-bottom: 100px;
+            
+        }
+
+        .div-tabela{
+            margin-left: 50px;
+            
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        td.bomba{
+            background-color: red;
+            text-shadow: 1px 1px 1px black;
+            font-weight: 400;
+        }
+        td.aviao{
+            background-color: yellow;
+        }
+
+        thead{
+            background-color: black;
+            color: white;
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: black;
+        }
+
+        thead.diferente{
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightblue;
+        }
+
+
+
+
+        tfoot{
+            background-color: rgba(211, 211, 211, 0.607);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.429);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.226);
+            
+            
+        }
+
+        tfoot th{
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.13);
+        }
+
+        tfoot td{
+            border: none;
+        }
+        td.total{
+          
+            height: 10vh;
+        }
+
+        section{
+            width: 800px;
+            height: 400px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.447);
+            margin: auto;
+            margin-bottom: 180px;
+
+        }
+        section p{
+            padding: 8px;
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: 400;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.116);
+
+        }
+
+        footer{
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.094);
+            min-width: 90vw;
+            color: blue;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.413);
+            
+        }
+
+        .rodape{
+            
+            position: static;
+            
+            
+           
+        }
+        col.d{
+            background-color: blueviolet;
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <h1>MINHA TABELA</h1>
+
+    <div class="div-tabela">
+        <table>
+            <colgroup>
+                <col class="a">
+                <col class="b">
+                <col class="c">
+                <col class="d">
+                <col class="e">
+            </colgroup>
+
+            <caption>Bombas disponíveis</caption>
+
+            <thead>
+                <th scope="col">TIPO DE MODELOS A</th>
+                <th scope="col">TIPO DE MODELOS B</th>
+                <th scope="col">TIPO DE MODELOS C</th>
+                <th scope="col">TIPO DE MODELOS D</th>
+                <th scope="col">TIPO DE MODELOS E</th>
+        
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                    <td>D1</td>
+                    <td>E1</td>
+                </tr>
+                <tr>
+                    <td>A2</td>
+                    <td class="aviao">B2</td>
+                    <td>C2</td>
+                    <td>D2</td>
+                    <td>E2</td>
+                </tr>
+                <tr>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                    <td>D3</td>
+                    <td>E3</td>
+                </tr>
+                <tr>
+                    <td>A4</td>
+                    <td>B4</td>
+                    <td class="bomba">C4</td>
+                    <td rowspan="2">D4</td>
+                    <td rowspan="2">E4</td>
+                </tr>
+                <tr>
+                    <td>A5</td>
+                    <td>B5</td>
+                    <td>C5</td>
+                    
+                    
+                </tr>
+            </tbody>
+            <tfoot>
+                <th scope="row">TOTAL DE MODELOS</th>
+                
+                <td colspan="4" class="total"><strong>23</strong></td>
+            </tfoot>
+        </table>
+    </div>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos rem quas omnis? Neque voluptate perferendis fugiat blanditiis nulla distinctio in modi voluptas consequuntur similique! Aspernatur, vitae optio. Suscipit, adipisci provident. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quod aliquid tempora sapiente praesentium velit dolore beatae enim voluptatum a corrupti deleniti itaque, exercitationem reprehenderit, pariatur mollitia, earum doloribus! Odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum cumque similique non aliquam nemo necessitatibus officiis soluta velit error nobis repellat, animi cum quae quis quia? Aperiam officia natus modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, placeat voluptatem? Officia quae odio asperiores nisi culpa aliquid amet voluptas sed, ipsum facere expedita corporis minima. Ullam esse soluta vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque pariatur quidem voluptatem animi eligendi cumque? Incidunt alias, voluptatum ab dignissimos inventore nihil, facere tenetur magni odit officia possimus tempore hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus veniam eos laudantium modi. Quasi culpa similique ratione quod fugiat quam fugit temporibus laborum quas provident. Temporibus mollitia deserunt nemo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate in vero numquam, omnis deleniti aliquam itaque atque dolore voluptate? Asperiores amet nulla doloribus voluptate sapiente iusto est quia, saepe libero? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid veniam, fugiat inventore magnam natus mollitia reiciendis officia exercitationem tempora error aut dolorem vel molestias sint ad labore est consequatur illo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut iste quibusdam magnam possimus vero cumque voluptate amet ipsam ea, autem similique consequatur facilis, velit tempora est accusantium rem neque odit.</p>
+    </section>
+
+    <div class="rodape">
+        <footer><p>Criado por Matheus Costa</p></footer>
+    </div>
+
+
+</body>
+</html>

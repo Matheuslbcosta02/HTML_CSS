@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 600px;
+            height: 600px;
+        }
+        caption{
+
+            background-color: blueviolet;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        th, tr,td{
+
+            border: 1px solid gray;
+            padding: 8px;
+        }
+
+        td{
+            text-align: center;
+        }
+        th{
+            background-color: lightgrey;
+        }
+      
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <table>
+        <caption>Filmes</caption>
+
+        <thead>
+            
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+            
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                 <td>Beatriz</td>
+                 <td>Hulk</td>
+                 <td>Enxeption</td>
+                 <td>Barca</td>
+            </tr>
+
+            <tr>
+                <td>Claudia</td>
+                <td>Obio</td>
+                <td>Matrix</td>
+                <td>Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Bruno</td>
+                <td>Intocaveis</td>
+                <td>Amneisa</td>
+                <td>Gladiadores</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Serto</td>
+                <td>Cangal</td>
+                <td>Wall-e</td>
+            </tr>
+
+            <tr>
+                <td>Fabiano</td>
+                <td>taxi</td>
+                <td>toy</td>
+                <td>incriveis</td>
+            </tr>
+         
+        </tbody>
+
+        <tfoot>
+
+
+        </tfoot>
+
+
+
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

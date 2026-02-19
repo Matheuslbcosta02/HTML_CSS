@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        table{
+
+            width: 600px;
+            height: 600px;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        th ,tr ,td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+        th#nota1{
+            background-color: red;
+        }
+        th#nota2{
+            background-color: red;
+        }
+
+    </style>
+
+
+
+
+</head>
+<body>
+    
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            
+            
+        </colgroup>
+
+        <thead>
+
+            <tr>
+                <th scope="col" >área</th>
+                <th scope="col">Disciplinas</th>      
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col">Média</th>
+
+                <tr>
+                    <th class="invi"></th>
+                    <th class="invi"></th>
+                    <th scope="col" id="nota1">Nota 1</th>
+                    <th scope="col" id="nota2">Nota 2</th>
+                </tr>
+                   
+                
+            </tr>
+
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th colspan="5">Notas individuais</th>
+            </tr>
+
+
+        </tbody>
+
+
+        <tfoot>
+
+
+
+        </tfoot>
+
+
+
+
+    </table>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
